@@ -1,0 +1,224 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+      font-family: "Rubik", sans-serif;
+}
+body::-webkit-scrollbar{
+    display: none;
+}
+body{
+    overflow-x: hidden;
+}
+
+.heros-container {
+    height: 45vh;
+    width: 100vw;
+    background-color: rgb(149, 149, 149);
+    position: relative;
+    overflow: hidden;
+}
+
+.bg-1 {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    transform: translateY(180px);
+}
+
+.bg-1 img {
+    height: 55%;
+    width: 55%;
+    object-fit: cover
+}
+
+.bg-2 {
+    position: absolute;
+    right: -5%;
+    height: 500px;
+    width: 500px;
+    top: 0;
+    transform: translateY(-60px) rotate(180deg);
+
+}
+
+.bg-2 img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.main-searchbar {
+    height: 45vh;
+    width: 100vw;
+    position: absolute;
+    top: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    backdrop-filter: blur(3px);
+    gap: 30px;
+
+}
+
+.main-searchbar input {
+    height: 45px;
+    width: 380px;
+    border: 1px solid black;
+    border-radius: 5px;
+    padding: 0 10px;
+    outline: none;
+    font-weight: 500;
+    font-size: 1rem;
+    background-color: whitesmoke;
+}
+.main-searchbar h1{
+    font-size: 2.3rem;
+    text-align: center;
+}
+.main-searchbar h1 span{
+    color: orangered;
+}
+.categories-container{
+    height: auto;
+    width: 100vw;
+    flex-wrap: wrap;
+    display: flex;
+    align-items: start;
+    justify-content: center;
+    gap: 30px;
+}
+.name{
+    height: 5px;
+    width: 100vw;
+    margin-top: 45px;
+    background-color: black;
+    position: relative;
+}
+.name h1{
+    position: absolute;
+     top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    background-color: orangered;
+    padding: 7px;
+    text-align: center;
+    border-radius: 34px;
+}
+
+.catergiries-main-container{
+    height: 350px;
+    border-radius: 14px;
+    width: 270px;
+    background-color: whitesmoke;
+    margin: 30px;
+    margin-top: 50px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    box-shadow: 5px 5px 50px rgb(214, 214, 214);
+
+    &:hover{
+        box-shadow: 5px 5px 50px 0px  rgb(212, 212, 212);
+        ;transform: translateY(-10px);
+        transition: 0.2s all ease-in-out;
+    }
+}
+
+.categiries-type{
+    background-color: orangered;
+ min-width: 50%;
+    max-width: 100%;
+    padding: 10px;
+    margin-top: 20px;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: white;
+    font-weight: bold;
+
+   &:hover {
+        transform: scale(0.9);
+        transition: 0.5s all ease-in-out;
+    }
+
+   
+}
+
+
+
+.categiries-card-img{
+    height: 200px;
+    width: 80%;
+    overflow: hidden;
+    background-color: black;
+    border-radius: 14px;
+}
+
+.categiries-card-img img{
+    height: 100%;
+    background-color: transparent;
+    width: 100%;
+    object-fit: cover;
+
+    &:hover{
+        transform: scale(1.1);
+        transition: 0.5s all ease-in-out;
+    
+    }
+}
+
+@media  screen and (max-width: 768px) {
+    .bg-2{
+        display: none;
+    }
+
+   .bg-1 {
+    position: absolute;
+    left: 0;
+    bottom: 100;
+  width: 100vw;
+  height: 70vh;;
+    /* transform: translateY(180px); */
+    
+}
+
+.bg-1 img {
+    height: 80%;
+    width: 80%;
+    object-fit: cover
+}
+
+    .main-searchbar {
+        height: 45%;
+        width: 100vw;
+        position: absolute;
+        top: 0;
+    }
+    .main-searchbar input{
+        height: 35px;
+        width: 70vw;
+        margin-top: 50px;
+    }
+    .catergiries-main-container{
+        margin: 30px auto;
+        margin-top: 20px;
+    }
+    .name{
+        margin-bottom: 40px;
+    }
+    
+}
+
+.footer-main-container{
+    background-color: rgb(38, 38, 38);
+    height: 50vh;
+    width: 100%;
+}
