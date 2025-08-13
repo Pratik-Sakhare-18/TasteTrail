@@ -3,12 +3,14 @@
 * {
     padding: 0;
     margin: 0;
-      font-family: "Rubik", sans-serif;
+    font-family: "Rubik", sans-serif;
 }
-body::-webkit-scrollbar{
+
+body::-webkit-scrollbar {
     display: none;
 }
-body{
+
+body {
     overflow-x: hidden;
 }
 
@@ -74,14 +76,17 @@ body{
     font-size: 1rem;
     background-color: whitesmoke;
 }
-.main-searchbar h1{
+
+.main-searchbar h1 {
     font-size: 2.3rem;
     text-align: center;
 }
-.main-searchbar h1 span{
+
+.main-searchbar h1 span {
     color: orangered;
 }
-.categories-container{
+
+.categories-container {
     height: auto;
     width: 100vw;
     flex-wrap: wrap;
@@ -90,16 +95,18 @@ body{
     justify-content: center;
     gap: 30px;
 }
-.name{
+
+.name {
     height: 5px;
     width: 100vw;
     margin-top: 45px;
     background-color: black;
     position: relative;
 }
-.name h1{
+
+.name h1 {
     position: absolute;
-     top: 50%;
+    top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     color: white;
@@ -109,7 +116,7 @@ body{
     border-radius: 34px;
 }
 
-.catergiries-main-container{
+.catergiries-main-container {
     height: 350px;
     border-radius: 14px;
     width: 270px;
@@ -123,16 +130,17 @@ body{
     flex-direction: column;
     box-shadow: 5px 5px 50px rgb(214, 214, 214);
 
-    &:hover{
-        box-shadow: 5px 5px 50px 0px  rgb(212, 212, 212);
-        ;transform: translateY(-10px);
+    &:hover {
+        box-shadow: 5px 5px 50px 0px rgb(212, 212, 212);
+        ;
+        transform: translateY(-10px);
         transition: 0.2s all ease-in-out;
     }
 }
 
-.categiries-type{
+.categiries-type {
     background-color: orangered;
- min-width: 50%;
+    min-width: 50%;
     max-width: 100%;
     padding: 10px;
     margin-top: 20px;
@@ -144,17 +152,17 @@ body{
     color: white;
     font-weight: bold;
 
-   &:hover {
+    &:hover {
         transform: scale(0.9);
         transition: 0.5s all ease-in-out;
     }
 
-   
+
 }
 
 
 
-.categiries-card-img{
+.categiries-card-img {
     height: 200px;
     width: 80%;
     overflow: hidden;
@@ -162,39 +170,40 @@ body{
     border-radius: 14px;
 }
 
-.categiries-card-img img{
+.categiries-card-img img {
     height: 100%;
     background-color: transparent;
     width: 100%;
     object-fit: cover;
 
-    &:hover{
+    &:hover {
         transform: scale(1.1);
         transition: 0.5s all ease-in-out;
-    
+
     }
 }
 
-@media  screen and (max-width: 768px) {
-    .bg-2{
+@media screen and (max-width: 480px) {
+    .bg-2 {
         display: none;
     }
 
-   .bg-1 {
-    position: absolute;
-    left: 0;
-    bottom: 100;
-  width: 100vw;
-  height: 70vh;;
-    /* transform: translateY(180px); */
-    
-}
+    .bg-1 {
+        position: absolute;
+        left: 0;
+        bottom: 100;
+        width: 100vw;
+        height: 70vh;
+        ;
+        /* transform: translateY(180px); */
 
-.bg-1 img {
-    height: 80%;
-    width: 80%;
-    object-fit: cover
-}
+    }
+
+    .bg-1 img {
+        height: 80%;
+        width: 80%;
+        object-fit: cover
+    }
 
     .main-searchbar {
         height: 45%;
@@ -202,23 +211,192 @@ body{
         position: absolute;
         top: 0;
     }
-    .main-searchbar input{
+
+    .main-searchbar input {
         height: 35px;
         width: 70vw;
         margin-top: 50px;
     }
-    .catergiries-main-container{
+
+    .catergiries-main-container {
         margin: 30px auto;
         margin-top: 20px;
     }
-    .name{
+
+    .name {
         margin-bottom: 40px;
     }
-    
+
+    .footer-container {
+
+        margin: auto;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
+        flex-direction: row;
+        background-color: red;
+    }
+
 }
 
-.footer-main-container{
-    background-color: rgb(38, 38, 38);
-    height: 50vh;
+@media screen and (min-width: 480px) and (max-width: 1190px) {
+    .bg-2 {
+        display: none;
+    }
+}
+
+footer {
+    background-color: #2c2c2c;
+    color: white;
+    padding: 40px 20px;
+    font-family: Arial, sans-serif;
+}
+
+.footer-container {
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.footer-logo-about {
+    flex: 1 1 250px;
+    margin-bottom: 20px;
+
+}
+
+.footer-logo-about p {
+    line-height: 1.6;
+    color: #ccc;
+}
+
+.footer-main-logo-container {
+    background-color: white;
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 5px 5px 20px rgb(39, 39, 39);
+
+    &:hover {
+
+        transition: 0.5s all ease-in-out;
+        box-shadow: 5px 5px 20px rgb(141, 141, 141);
+
+    }
+
+}
+
+.footer-main-logo-container img {
     width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    object-fit: fill;
+
+    &:hover {
+        transform: rotate(20deg) scale(1.1);
+        transition: 0.5s all ease-in-out;
+
+    }
+}
+
+
+.footer-quick-links {
+    flex: 1 1 200px;
+    margin-top: 10px;
+}
+
+.footer-links-list {
+    list-style: none;
+    padding: 0;
+    color: #ccc;
+}
+
+.footer-quick-links h3 {
+    color: orangered;
+    margin-bottom: 15px;
+}
+
+.footer-quick-links ul {
+    list-style: none;
+    padding: 0;
+    color: #ccc;
+}
+
+.footer-quick-links li {
+    margin-bottom: 10px;
+}
+
+.footer-quick-links a {
+    color: #ccc;
+    text-decoration: none;
+
+    &:hover {
+        color: white;
+        font-weight: bold;
+        margin-left: 10px;
+        transition: 0.5s all ease-in-out;
+    }
+}
+
+.footer-social-media {
+    flex: 1 1 200px;
+    margin-bottom: 20px;
+}
+
+.footer-social-media h3 {
+    color: orangered;
+    margin-bottom: 15px;
+}
+
+.footer-social-media a {
+    color: white;
+    text-decoration: none;
+    font-size: 2rem;
+    margin-right: 10px;
+    margin-top: 10px;
+
+    &:hover {
+        color: orangered;
+        transition: color 0.3s ease;
+        transform: rotate(360deg);
+    }
+}
+
+
+.footer-contact-info {
+    flex: 1 1 250px;
+    margin-bottom: 20px;
+}
+
+.footer-contact-info h3 {
+    color: orangered;
+    margin-bottom: 15px;
+}
+
+.footer-contact-info p {
+    color: #ccc;
+    margin-bottom: 10px;
+
+    &:hover {
+        color: white;
+        font-weight: bold;
+        transform: translateX(5px);
+        transition: 0.5s all ease-in-out;
+    }
+}
+
+.footer-bottom-bar {
+    text-align: center;
+    margin-top: 20px;
+    border-top: 1px solid #444;
+    padding-top: 10px;
+    color: #aaa;
+    font-size: 14px;
 }

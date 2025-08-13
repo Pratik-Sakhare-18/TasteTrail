@@ -47,7 +47,7 @@ body::-webkit-scrollbar {
 
 .result-container-body {
     width: 92vw;
-    min-height: 60vh;
+    min-height: auto;
     background-color: #e0dfdf;
     padding: 10px;
     border-radius: 14px;
@@ -56,15 +56,15 @@ body::-webkit-scrollbar {
 
 }
 
-.result-container-body>h3 {
+.result-container-bod h3 {
     font-size: 1.4rem;
     margin-left: 30px;
     margin-top: 10px;
 }
 
 .recipe-info-container {
-    width: 100%;
-    min-height: 100%;
+    width: auto;
+    /* min-height: ; */
     display: flex;
     justify-content: space-between;
     position: relative;
@@ -84,6 +84,11 @@ body::-webkit-scrollbar {
     width: 80%;
     border-radius: 14px;
     object-fit: cover;
+
+    &:hover{
+        transform: scale(1.01);
+        transition: 0.5s all ease-in-out;
+    }
 
 }
 
@@ -110,8 +115,9 @@ body::-webkit-scrollbar {
 
 .ingredient-body {
     padding: 1px 8px;
-    border-radius: 14px;
+    border-radius: 5px;
     margin: 4px 4px;
+    color: white;
     background-color: orangered;
     display: inline-block;
 }
