@@ -31,15 +31,12 @@ const loadcategories = async () => {
 
 loadcategories()
 
-
-
 const searchBycard = (foodIteam) => {
     loadSearchResult(foodIteam)
     setTimeout(() => {
         window.location.href = "./pages/result.html"
     }, 1000)
 }
-
 
 // load serchBox 
 serchInput.addEventListener("keydown", (e)=> {
@@ -51,8 +48,6 @@ serchInput.addEventListener("keydown", (e)=> {
         }, 1000)
     }
 })
-
-
 
 // search food 
 

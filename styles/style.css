@@ -42,7 +42,6 @@ body {
     width: 500px;
     top: 0;
     transform: translateY(-60px) rotate(180deg);
-
 }
 
 .bg-2 img {
@@ -62,7 +61,6 @@ body {
     flex-direction: column;
     backdrop-filter: blur(3px);
     gap: 30px;
-
 }
 
 .main-searchbar input {
@@ -156,8 +154,6 @@ body {
         transform: scale(0.9);
         transition: 0.5s all ease-in-out;
     }
-
-
 }
 
 
@@ -179,7 +175,6 @@ body {
     &:hover {
         transform: scale(1.1);
         transition: 0.5s all ease-in-out;
-
     }
 }
 
@@ -194,9 +189,6 @@ body {
         bottom: 100;
         width: 100vw;
         height: 70vh;
-        ;
-        /* transform: translateY(180px); */
-
     }
 
     .bg-1 img {
@@ -228,7 +220,6 @@ body {
     }
 
     .footer-container {
-
         margin: auto;
         display: flex;
         flex-wrap: wrap;
@@ -285,10 +276,8 @@ footer {
     box-shadow: 5px 5px 20px rgb(39, 39, 39);
 
     &:hover {
-
         transition: 0.5s all ease-in-out;
         box-shadow: 5px 5px 20px rgb(141, 141, 141);
-
     }
 
 }
@@ -302,10 +291,8 @@ footer {
     &:hover {
         transform: rotate(20deg) scale(1.1);
         transition: 0.5s all ease-in-out;
-
     }
 }
-
 
 .footer-quick-links {
     flex: 1 1 200px;
@@ -368,7 +355,6 @@ footer {
         transform: rotate(360deg);
     }
 }
-
 
 .footer-contact-info {
     flex: 1 1 250px;

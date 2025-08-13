@@ -1,14 +1,10 @@
-let result = JSON.parse(localStorage.getItem("searchRes")) 
+let result = JSON.parse(localStorage.getItem("searchRes"))
 console.log(result)
-
 
 let mainRecipeContainer = document.getElementById("main-recipe-container")
 let errorContainer = document.getElementById("error-container")
 let mainIngredientsContainer = document.getElementById("main-ingredients-container")
 let btnBack = document.getElementById("btn-back")
-
-
-
 
 const createIngredients = (allinfo) => {
     let mainIngredients = []
@@ -41,10 +37,6 @@ const createIngredients = (allinfo) => {
 
 }
 
-
-
-
-
 const createRecipeCrads = () => {
 
     let cardsHtml = ""
@@ -60,39 +52,39 @@ const createRecipeCrads = () => {
         </div>`
 
     } else {
-   
+
         document.title = "TasteTrial | " + result[0].strMeal
-        
 
+        for (i = 0; i < result.length; i++) {
 
-    for(i=0 ; i<result.length ;i++)
-    {
-        cardsHtml += `<div class="result-container-body">
+            cardsHtml += `<div class="result-container-body">
+
         <h3>${result[i].strMeal}</h3>
         <div class="recipe-info-container">
             <div class="result-container-img">
                 <img src="${result[i].strMealThumb}">
             </div>  
                 
-                <p+ id="main-ingredients-container">
+            <p+ id="main-ingredients-container">
                 <h2>Ingredients</h2>
-                  ${createIngredients(result[i])}
-                  </p>
-                   <h2>Instructions</h2>
-                        <p class="instructions">${result[0].strInstructions}</p>
+                ${createIngredients(result[i])}
+            </p>
 
-                         <h2>Sources</h2>
-                         <a href="${result[0].strSource}" target="_blank">${result[0].strSource}</a>
-                         <br>
-                         <br>
-                         <a href="${result[0].strYoutube}" target="_blank">${result[0].strYoutube}</a>
+            <h2>Instructions</h2>
+                <p class="instructions">${result[0].strInstructions}</p>
+
+                <h2>Sources</h2>
+                    <a href="${result[0].strSource}" target="_blank">${result[0].strSource}</a>
+                    <br>
+                    <br>
+                    <a href="${result[0].strYoutube}" target="_blank">${result[0].strYoutube}</a>
                     </div>
                 </div>
            </div>
        </div>`
-                    
+
+        }
     }
-}
     return cardsHtml
 }
 
